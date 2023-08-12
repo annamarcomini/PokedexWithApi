@@ -1,0 +1,28 @@
+
+
+.hero{
+ width: 50px;
+  height: 50px;
+  /* Centralizar na vertical e na horizontal */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+
+
+
+  button{
+   height: 3rem;
+   border-radius: 3rem; // arredondar os cantos
+   border: 0;
+   padding: 1.5rem;
+  align-items: center;
+  display: flex; //alinhar o icone com o texto do botão
+ align-items: center; //centralizar eles no meio do botão
+ justify-content: center;
+ font-weight: bold;
+   background-color: var(--purple);
+   color: var(--white);
+
+  }
+}
