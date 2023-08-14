@@ -1,14 +1,17 @@
 import styles from './home.module.scss'
+import Link from "next/link"
 
 export default function Home (){
 return (
   <>
-    <main>
+    <div className={styles.container}>
       <section className={styles.hero}>
         <span>Home</span>
-        <button type="button">Details</button>
+       <Link href="/details">
+          <button type="button">Details</button>
+        </Link>
       </section>
-    </main>
+    </div>
   </>
 )
 
