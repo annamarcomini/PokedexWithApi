@@ -1,4 +1,4 @@
-import Link from "next/link"
+
 import styles from "./home.module.scss"
 import { useRouter } from "next/navigation"
 
