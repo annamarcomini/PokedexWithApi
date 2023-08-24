@@ -7,8 +7,12 @@ export function Repository(){
  const[repositories, setRepositories]= useState([])
        useEffect(() => {
          api
-           .get("https://api.github.com/users/joaovitorqueiroz/repos")
-           .then((response) => setRepositories(response.data)) // Atualiza o estado com os dados da resposta
+           .get("https://pokeapi.co/api/v2/pokemon")
+           .then((response) => {
+            console.log(response)
+            setRepositories(response.data.results)
+           }) // Atualiza o estado com os dados da resposta
+           
       },[])
 
   
@@ -17,9 +21,9 @@ export function Repository(){
   <section className="repository"> 
   <h1>Lista de repositórios</h1>
   <ul>
-   {repositories.map(repository =>{
+    {repositories.map(repository =>{
     return <RepositoryItem repository={repository}/>
-   })}
+   })} 
   </ul>
   </section>
  )

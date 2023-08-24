@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: "https://api.github.com/users/joaovitorqueiroz/repos"
+  baseURL: "https://pokeapi.co/api/v2/pokemon",
 })

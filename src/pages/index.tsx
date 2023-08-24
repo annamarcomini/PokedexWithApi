@@ -6,10 +6,9 @@ export default function Home (){
 return (
   <>
     <div className={styles.container}>
+      <Repository />
       <section className={styles.hero}>
-        
-        <Repository/>
-       <Link href="/details">
+        <Link href="/details">
           <button type="button">Details</button>
         </Link>
       </section>
