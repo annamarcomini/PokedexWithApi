@@ -19,7 +19,6 @@ export function Pokemon(){
 
  return(
   <section className="pokemons"> 
-  <h1>Lista de pokemons</h1>
   <ul>
     {pokemons.map(pokemon =>{
     return <PokemonItem pokemon={pokemon}/>

@@ -5,14 +5,11 @@ import { Pokemon } from '@/components/Pokemon'
 export default function Home (){
 return (
   <>
-    <div className={styles.container}>
-      <Pokemon />
-      <section className={styles.hero}>
-        <Link href="/details">
-          <button type="button">Details</button>
-        </Link>
-      </section>
-    </div>
+    <main>
+      <div className={styles.container}>
+        <div className={styles.content}>{/* <Pokemon /> */}</div>
+      </div>
+    </main>
   </>
 )
 

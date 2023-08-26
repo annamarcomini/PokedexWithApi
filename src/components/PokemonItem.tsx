@@ -5,12 +5,11 @@ interface PokemonItemProps{
   html_url: string
  }
 }
-export function PokemonItem (props: PokemonItemProps) {
+export function PokemonItem ( {pokemon}: PokemonItemProps) {
  return (
    <li>
-     {/* <strong>{props.repository.name}</strong>
-     <p>{props.repository.description}</p>
-     <a href={props.repository.html_url}>Acessar repositório</a> */}
+     <strong>{pokemon.name}</strong>
+     
    </li>
  )
 }
