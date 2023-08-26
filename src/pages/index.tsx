@@ -1,12 +1,12 @@
 import styles from './home.module.scss'
 import Link from "next/link"
-import { Repository } from '@/components/Repository'
+import { Pokemon } from '@/components/Pokemon'
 
 export default function Home (){
 return (
   <>
     <div className={styles.container}>
-      <Repository />
+      <Pokemon />
       <section className={styles.hero}>
         <Link href="/details">
           <button type="button">Details</button>

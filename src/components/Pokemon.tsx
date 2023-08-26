@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react"
-import { RepositoryItem } from "./RepositoryItem"
+import { PokemonItem } from "./PokemonItem"
 import axios from "axios"
 import { api } from "@/services/api"
 
-export function Repository(){
- const[repositories, setRepositories]= useState([])
+export function Pokemon(){
+ const[pokemons, setPokemons]= useState([])
        useEffect(() => {
          api
            .get("https://pokeapi.co/api/v2/pokemon")
            .then((response) => {
             console.log(response)
-            setRepositories(response.data.results)
+            setPokemons(response.data.results)
            }) // Atualiza o estado com os dados da resposta
            
       },[])
@@ -18,11 +18,11 @@ export function Repository(){
   
 
  return(
-  <section className="repository"> 
-  <h1>Lista de repositórios</h1>
+  <section className="pokemons"> 
+  <h1>Lista de pokemons</h1>
   <ul>
-    {repositories.map(repository =>{
-    return <RepositoryItem repository={repository}/>
+    {pokemons.map(pokemon =>{
+    return <PokemonItem pokemon={pokemon}/>
    })} 
   </ul>
   </section>

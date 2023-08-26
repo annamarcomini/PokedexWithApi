@@ -1,11 +1,11 @@
-interface RepositoryItemProps{
- repository:{
+interface PokemonItemProps{
+ pokemon:{
   name:string
   description: string
   html_url: string
  }
 }
-export function RepositoryItem (props: RepositoryItemProps) {
+export function PokemonItem (props: PokemonItemProps) {
  return (
    <li>
      {/* <strong>{props.repository.name}</strong>
