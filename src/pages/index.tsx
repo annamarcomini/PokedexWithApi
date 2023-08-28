@@ -6,9 +6,7 @@ export default function Home (){
 return (
   <>
     <main>
-      <div className={styles.container}>
-        <div className={styles.content}>{/* <Pokemon /> */}</div>
-      </div>
+      <Pokemon/>
     </main>
   </>
 )

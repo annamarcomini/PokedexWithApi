@@ -1,0 +1,31 @@
+.main{
+
+}
+.container{
+  display: inline-flex;
+  align-items: center; /* Alinha verticalmente no início */
+  justify-content: center; /* Alinha horizontalmente no início */
+  height: 15rem;
+  width: 15rem;
+  background: white;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  flex-direction: row;
+ } 
+
+  .content{
+  display:inline-block;
+  flex-direction: row;
+  height: 2rem;
+  width: 15rem;
+  margin-top: 17rem;
+  
+  background: red;
+  
+  a{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    
+  }
+  }

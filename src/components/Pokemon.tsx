@@ -18,12 +18,11 @@ export function Pokemon(){
   
 
  return(
-  <section className="pokemons"> 
-  <ul>
-    {pokemons.map(pokemon =>{
+  <section className="pokemon"> 
+  {pokemons.map(pokemon =>{
     return <PokemonItem pokemon={pokemon}/>
    })} 
-  </ul>
+  
   </section>
  )
 }
