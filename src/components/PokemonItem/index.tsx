@@ -23,13 +23,10 @@ export function PokemonItem({ pokemon }: PokemonItemProps) {
     <>
       <main className={styles.main}>
         <div className={styles.container}>
-          <img
-            src={pokemonImgUrl}
-            alt="Imagem SVG"
-          ></img>
-          <div className={styles.content}>
-            <a>{pokemon.name}</a>
-          </div>
+          <img src={pokemonImgUrl} alt="Imagem SVG"></img>
+        </div>
+        <div className={styles.content}>
+          <a>{pokemon.name}</a>
         </div>
       </main>
     </>

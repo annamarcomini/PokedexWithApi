@@ -9,23 +9,23 @@
   width: 15rem;
   background: white;
   margin-top: 2rem;
-  flex-direction: row;
 
   img{
     height: 10rem;
     width: 10rem;
+    background-color: red;
   }
  } 
 
-  .content{
-  display:inline-block;
-  flex-direction: row;
+
+  .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 2rem;
   width: 15rem;
-  margin-top: 17rem;
-  
   background: red;
-  
+
   a{
     align-items: center;
     justify-content: center;
