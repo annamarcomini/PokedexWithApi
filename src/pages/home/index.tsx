@@ -6,8 +6,8 @@ import { api } from "@/services/api"
 export default function Home() {
   const [pokemons, setPokemons] = useState([])
   useEffect(() => {
-    api.get("https://pokeapi.co/api/v2/pokemon").then((response) => {
-      console.log(response)
+    api.get("/pokemon").then((response) => {
+     console.log("aloooo",pokemons)
       setPokemons(response.data.results)
     }) // Atualiza o estado com os dados da resposta
   }, [])
