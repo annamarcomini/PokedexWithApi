@@ -1,0 +1,27 @@
+.container{
+ display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+  gap: 16px;
+
+  button {
+    font-size: 1rem;
+    color: var(--gray-900);
+    background: var(--gray);
+
+    border: 0px;
+    padding: 14 32 14 32px;
+    border-radius: 6px;
+    height: 54px;
+    width: 147px;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+      :focus {
+        outline: 0;
+        box-shadow: 0 0 0 2px var(--blue);
+      }
+    }
+  }
+}
