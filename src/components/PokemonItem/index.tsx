@@ -25,7 +25,7 @@ export function PokemonItem({ pokemon }: PokemonItemProps) {
       })
      })
 
-     const capitalizeFirstLetter = (str: string) => {
+     const capitalizeFirstLetter = (str: string) => { //
        return str.charAt(0).toUpperCase() + str.slice(1)
      }
    
