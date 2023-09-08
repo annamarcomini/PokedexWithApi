@@ -1,32 +1,40 @@
-.main{
-
-}
-.container{
-  display: inline-flex;
-  align-items: center; /* Alinha verticalmente no início */
-  justify-content: center; /* Alinha horizontalmente no início */
-  height: 15rem;
-  width: 15rem;
-  background: white;
-  margin-top: 2rem;
-
-  img{
-    height: 10rem;
-    width: 10rem;
-    background-color: red;
-  }
- } 
-
-
-  .content {
+.main {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Alinhar elementos verticalmente */
+  justify-content: center; /* Alinhar elementos horizontalmente */
+  text-align: center; /* Alinhar texto centralmente (se necessário) */
+  background-color: var(--gray);
+  height: 12rem;
+  border-radius: 15px;
+  width: 12.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column; /* Alinhar elementos verticalmente */
+  align-items: center; /* Alinhar horizontalmente */
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.container img {
+  height: 9rem;
+  width: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+.container a {
+  display: block;
   height: 2rem;
   width: 15rem;
-  background: red;}
-
-  .content a{
-   
-  }
+  color: var(--blue);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+ 
+}
+.container h1 {
   
+font-size: 20px;
+ color: var(--blue);
+ font-weight: 500;
+}

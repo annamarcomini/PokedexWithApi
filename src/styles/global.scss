@@ -9,12 +9,13 @@
   --white: #ffffff;
   --purple: purple;
   --gray-900: #121214;
-  --gray: gray;
-  --blue: blue;
+  --background:#F8F9FA;
+  --gray: #ececed;
+  --blue: #3860aa;
 }
 
 body {
-  background: var(--gray-900);
+  background: var(--background);
   color: var(--white); 
 }
 

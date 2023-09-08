@@ -1,0 +1,30 @@
+.header{
+
+ width: 100vw;
+ 
+ display: flex;
+ flex-direction: column;
+ 
+ 
+ h1{
+  display:flex;
+  margin-left: 15rem;
+  margin-top: 3.5rem;
+  color: var(--gray-900);
+  font-size: 35px;
+ }
+}
+.imgLogo{
+ width: 14rem;
+ margin-left: 20px;
+;
+}
+.content{
+ display: flex;
+ flex-direction: row;
+}
+.imgPokeball{
+ height: 12.5rem;
+ margin-left: 17rem;
+ margin-top: -6rem;
+}
