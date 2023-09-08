@@ -24,14 +24,18 @@ export function PokemonItem({ pokemon }: PokemonItemProps) {
         setPokemonId(response.data.id)
       })
      })
+
+     const capitalizeFirstLetter = (str: string) => {
+       return str.charAt(0).toUpperCase() + str.slice(1)
+     }
    
   return (
     <>
       <main className={styles.main}>
         <div className={styles.container}>
           <img src={pokemonImgUrl} alt="Imagem SVG"></img>
-           <a>{pokemon.name}</a>
-           <h1>#{pokemonId}</h1>
+          <a>{capitalizeFirstLetter(pokemon.name)}</a>
+          <h1>#{pokemonId}</h1>
         </div>
       </main>
     </>
