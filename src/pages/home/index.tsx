@@ -3,6 +3,7 @@ import { PokemonItem } from "@/components/PokemonItem"
 import { useEffect, useState } from "react"
 import { api } from "@/services/api"
 import { Header } from "@/components/Header"
+import Head from "next/head"
 
 export default function Home() {
   const [pokemons, setPokemons] = useState([])
@@ -16,7 +17,10 @@ export default function Home() {
   return (
     <>
       <div>
-        <Header/>
+        <Head>
+          <title>Pokédex</title>
+        </Head>
+        <Header />
         <main className={styles.home}>
           {pokemons.map((pokemon) => {
             return <PokemonItem pokemon={pokemon} />
