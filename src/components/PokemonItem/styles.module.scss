@@ -14,16 +14,21 @@
   align-items: center; /* Alinhar horizontalmente */
   margin-bottom: 5rem;
   margin-top: 1rem;
+
 }
 
 .container img {
-  height: 9rem;
-  width: 10rem;
+  height: 9.5rem;
+  width: 9.5rem;
   margin-bottom: 0.5rem;
-}
-.img.ho
+  transition: transform 0.5s;
 
-.container a {
+   &:hover{
+    transform: translateY(-10px);
+   }
+}
+
+ .container a {
   display: block;
   height: 2rem;
   width: 15rem;
@@ -33,9 +38,12 @@
   margin-bottom: 3px;
  
 }
-.container h1 {
+ .container h1 {
   
 font-size: 20px;
  color: var(--blue);
  font-weight: 500;
+
 }
+
+
