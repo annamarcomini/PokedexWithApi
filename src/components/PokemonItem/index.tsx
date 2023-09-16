@@ -1,6 +1,8 @@
 import styles from "./styles.module.scss"
 import React, { useEffect, useState } from "react"
 import { api } from "@/services/api"
+import Link from "next/link"
+import {PokemonDetailsProps}  from "../../types/pokemon"
 
 interface PokemonItemProps {
   pokemon: {
@@ -9,20 +11,13 @@ interface PokemonItemProps {
   }
 }
 export function PokemonItem({ pokemon }: PokemonItemProps) {
-  const [pokemonImgUrl, setPokemonImgUrl] = useState()
+  const [pokemonDetails, setPokemonDetails] = useState<PokemonDetailsProps>()
   useEffect(() => {
     api.get(pokemon.url).then((response) => {
       console.log("responseeeee", response)
-      setPokemonImgUrl(response.data.sprites.other.dream_world.front_default)
+      setPokemonDetails(response.data)
     }) // Atualiza o estado com os dados da resposta
   }, [])
-
-  const [pokemonId, setPokemonId] = useState()
-  useEffect(() => {
-    api.get(pokemon.url).then((response) => {
-      setPokemonId(response.data.id)
-    })
-  })
 
   const capitalizeFirstLetter = (str: string) => {
     //
@@ -30,14 +25,17 @@ export function PokemonItem({ pokemon }: PokemonItemProps) {
   }
 
   return (
-  
-      <main className={styles.main}>
+    <main className={styles.main}>
+      <Link href="/details">
         <div className={styles.container}>
-          <img src={pokemonImgUrl} alt="Imagem SVG"></img>
+          <img
+            src={pokemonDetails?.sprites?.other?.dream_world?.front_default}
+            alt="Imagem SVG"
+          ></img>
           <a>{capitalizeFirstLetter(pokemon.name)}</a>
-          <h1>#{pokemonId}</h1>
+          <h1>#{pokemonDetails?.id}</h1>
         </div>
-      </main>
-    
+      </Link>
+    </main>
   )
 }
