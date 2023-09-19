@@ -14,19 +14,17 @@ export function PokemonItem({ pokemon }: PokemonItemProps) {
   const [pokemonDetails, setPokemonDetails] = useState<PokemonDetailsProps>()
   useEffect(() => {
     api.get(pokemon.url).then((response) => {
-      console.log("responseeeee", response)
       setPokemonDetails(response.data)
     }) // Atualiza o estado com os dados da resposta
   }, [])
 
   const capitalizeFirstLetter = (str: string) => {
-    //
     return str.charAt(0).toUpperCase() + str.slice(1)
   }
 
   return (
     <main className={styles.main}>
-      <Link href="/details">
+      <Link href={`/pokemon/${pokemonDetails?.name}`}>
         <div className={styles.container}>
           <img
             src={pokemonDetails?.sprites?.other?.dream_world?.front_default}
@@ -34,8 +32,8 @@ export function PokemonItem({ pokemon }: PokemonItemProps) {
           ></img>
           <a>{capitalizeFirstLetter(pokemon.name)}</a>
           <h1>#{pokemonDetails?.id}</h1>
+
         </div>
       </Link>
     </main>
-  )
-}
+  )}
