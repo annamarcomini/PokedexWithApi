@@ -6,6 +6,7 @@ import Head from "next/head"
 import styles from './styles.module.scss'
 import Image from "next/image"
 import logoIMG from '../../assets/Pokemon.svg'
+import Weight from "@/components/Weight"
 
 interface PokemonDetailsPageProps { 
   pokemon: PokemonDetailsProps
@@ -35,6 +36,7 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
           src={pokemon.sprites.other.dream_world.front_default}
           alt="Imagem SVG"
         />
+        <Weight pokemon={pokemon} />
       </div>
     </>
   )
