@@ -7,6 +7,7 @@ import styles from './styles.module.scss'
 import Image from "next/image"
 import logoIMG from '../../assets/Pokemon.svg'
 import Weight from "@/components/Weight"
+import Height from "@/components/Height"
 
 interface PokemonDetailsPageProps { 
   pokemon: PokemonDetailsProps
@@ -36,7 +37,8 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
           src={pokemon.sprites.other.dream_world.front_default}
           alt="Imagem SVG"
         />
-        <Weight pokemon={pokemon} />
+          <Weight pokemon={pokemon} />
+          <Height pokemon={pokemon} />
       </div>
     </>
   )
@@ -47,7 +49,7 @@ export default PokemonDetailsPage
 export async function getServerSideProps({ params}) {
   const response = await api.get(`/pokemon/${params.slug}`)
   const pokemon = response.data
-
+  console.log('oiiiiii', pokemon)
   return {
     props: {
       pokemon,

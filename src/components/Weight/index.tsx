@@ -8,7 +8,7 @@ export default function Weight({pokemon}: PokemonDetailsPageProps) {
   return (
     <div className={styles.texts}>
       <h1>Weight:</h1>
-      <p>{pokemon.weight}</p>
+      <span>{pokemon.weight}</span>
     </div>
   )
 }

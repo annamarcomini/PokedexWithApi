@@ -9,7 +9,7 @@ export default function ({pokemon}: PokemonDetailsPageProps){
 return (
   <div className={styles.texts}>
     <h1>Height:</h1>
-    <p>{pokemon.height}</p>
+    <span>{pokemon.height}</span>
   </div>
 )
 }
