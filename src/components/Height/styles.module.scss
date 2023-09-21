@@ -1,25 +1,26 @@
 .texts {
-  display: flex;
-  flex-direction: column;
-
-  h1 {
+  p {
     color: var(--gray-900);
-    font-size: 1.3rem;
-    margin-bottom: 12px;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    margin-left: 1.6rem;
+    font-weight: bold;
   }
-
-   span {
-    margin-left: 2.5rem;
-    justify-content: center;
-    align-items: center;
+  span {
+    margin-left: 1.6rem;
+    font-weight: 500;
     color: var(--gray-900);
     font-size: 1.2rem;
     background-color: var(--blue-100);
-    width: 4rem;
     border-radius: 10px;
     border: solid 2px;
     border-color: var(--blue);
-    padding: 5px 15px 5px 15px; //centraliza o texto no centro
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px; 
+    padding-bottom: 4px;//centraliza o texto no centro
     cursor: default; /* Impede que o cursor mude para o estilo de clique */
+
+    
   }
 }

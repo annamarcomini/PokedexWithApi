@@ -1,14 +1,13 @@
-import { PokemonDetailsProps } from "../../types/pokemon"
 import styles from './styles.module.scss'
 
-interface PokemonDetailsPageProps {
-  pokemon: PokemonDetailsProps
+interface WeightProps {
+  value: number
 }
-export default function Weight({pokemon}: PokemonDetailsPageProps) {
+export default function Weight({value}: WeightProps) {
   return (
     <div className={styles.texts}>
-      <h1>Weight:</h1>
-      <span>{pokemon.weight}</span>
+      <p>Weight:</p>
+      <span>{(value / 10).toFixed(2)}kg</span>
     </div>
   )
 }

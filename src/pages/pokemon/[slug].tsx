@@ -18,8 +18,12 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
    return str.charAt(0).toUpperCase() + str.slice(1)
  } 
   return (
-    <>
-      <div className={styles.header}>
+    <main>
+      <Head>
+        <title>Pokédex</title>
+      </Head>
+
+      <div className={styles.logo}>
         <Image
           className={styles.imgLogo}
           priority
@@ -27,20 +31,25 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
           alt="Follow us on Twitter"
         />
       </div>
-      <div className={styles.details}>
-        <Head>
-          <title>Pokédex</title>
-        </Head>
+
+      <div className={styles.content}>
         {/* Renderize aqui os detalhes do Pokémon */}
-        <h1>{capitalizeFirstLetter(pokemon.name)}</h1>
-        <img
-          src={pokemon.sprites.other.dream_world.front_default}
-          alt="Imagem SVG"
-        />
-          <Weight pokemon={pokemon} />
-          <Height pokemon={pokemon} />
+        <div className={styles.column1}>
+          <h1>{capitalizeFirstLetter(pokemon.name)}</h1>
+          <div className={styles.row}>
+            <Weight value={pokemon.weight} />
+            <Height value={pokemon.height} />
+          </div>
+        </div>
+
+        <div className={styles.column2}>
+          <img
+            src={pokemon.sprites.other.dream_world.front_default}
+            alt="Imagem SVG"
+          />
+        </div>
       </div>
-    </>
+    </main>
   )
 }
 
@@ -49,7 +58,7 @@ export default PokemonDetailsPage
 export async function getServerSideProps({ params}) {
   const response = await api.get(`/pokemon/${params.slug}`)
   const pokemon = response.data
-  console.log('oiiiiii', pokemon)
+ 
   return {
     props: {
       pokemon,

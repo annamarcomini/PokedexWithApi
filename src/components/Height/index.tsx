@@ -1,15 +1,16 @@
 import { PokemonDetailsProps } from "@/types/pokemon";
 import styles from './styles.module.scss'
 
-interface PokemonDetailsPageProps {
-  pokemon: PokemonDetailsProps
+interface HeightProps {
+  value: number;
 }
 
-export default function ({pokemon}: PokemonDetailsPageProps){
+export default function Height ({value}: HeightProps){
 return (
   <div className={styles.texts}>
-    <h1>Height:</h1>
-    <span>{pokemon.height}</span>
+    <p>Height:</p>
+    <span>{(value / 10).toFixed(2)}m</span>
+    {/* para concatenar de acordo com as casas decimais */}
   </div>
 )
 }
