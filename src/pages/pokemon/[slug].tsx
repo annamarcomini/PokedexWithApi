@@ -68,10 +68,11 @@ export default PokemonDetailsPage
 export async function getServerSideProps({ params }) {
   const response = await api.get(`/pokemon/${params.slug}`)
   const pokemon = response.data
-
+  
   return {
     props: {
       pokemon,
     },
   }
+  
 }

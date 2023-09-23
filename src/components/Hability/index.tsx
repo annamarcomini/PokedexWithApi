@@ -8,7 +8,7 @@ import styles from './styles.module.scss'
  export default function Hability({ title, children }: HabilityProps) {
    return (
      <main>
-       <div className={styles.tittle}>
+       <div className={styles.title}>
         <p>{title}</p>
       </div>
       <div className={styles.texts}>{children}</div>
