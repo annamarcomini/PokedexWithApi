@@ -44,5 +44,23 @@ font-size: 1rem;
   
  }
 }
+.ability{ //para estilizar em duas caixas separadas teve que ser aqui e não no componente
+ span{
+    margin-left: 2.5rem;
+    font-weight: 500;
+    color: var(--gray-900);
+    font-size: 1.2rem;
+    background-color: var(--blue-100);
+    border-radius: 8px;
+    border: solid 2px;
+    border-color: var(--blue);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px; 
+    padding-bottom: 4px;//centraliza o texto no centro
+    cursor: default; /* Impede que o cursor mude para o estilo de clique */
+}
+ }
+
 
 

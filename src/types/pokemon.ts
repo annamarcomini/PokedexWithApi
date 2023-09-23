@@ -1,5 +1,5 @@
 export interface PokemonDetailsProps {
-  abilities: Ability[]
+  abilities: Ability2[]
   base_experience: number
   forms: Form[]
   game_indices: Index[]
@@ -19,15 +19,15 @@ export interface PokemonDetailsProps {
   weight: number
 }
 
-export interface Ability {
-  ability: Ability2
-  is_hidden: boolean
-  slot: number
-}
+
 
 export interface Ability2 {
-  name: string
-  url: string
+  ability: {
+    name: string
+    url: string
+  }
+  is_hidden: boolean
+  slot: number
 }
 
 export interface Form {

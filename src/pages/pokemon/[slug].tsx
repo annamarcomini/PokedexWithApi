@@ -1,6 +1,6 @@
 import React from "react"
 import { api } from "@/services/api"
-import { PokemonDetailsProps, Ability, Ability2 } from "../../types/pokemon"
+import { PokemonDetailsProps } from "../../types/pokemon"
 import Head from "next/head"
 import styles from "./styles.module.scss"
 import Image from "next/image"
@@ -39,22 +39,26 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
             <Weight value={pokemon.weight} />
             <Height value={pokemon.height} />
           </div>
+    
           <div className={styles.ability}>
-            <Hability />
+            <Hability title="Habilities:">
+           {pokemon.abilities.map((ability, index) => ( //fiz esse map pra mapear eacessar uma tipagem de array na api
+             <span key={index}>{ability.ability.name}</span>
+          ))}
+            </Hability>     
           </div>
         </div>
       </div>
 
-      {/* <div className={styles.container2}> */}
-        <div className={styles.column2}>
-          <div className={styles.pokeIMG}>
-            <img
-              src={pokemon.sprites.other.dream_world.front_default}
-              alt="Imagem SVG"
-            />
-          </div>
+
+      <div className={styles.column2}> {/*parte do pokemon img */}
+        <div className={styles.pokeIMG}>
+          <img
+            src={pokemon.sprites.other.dream_world.front_default}
+            alt="Imagem SVG"
+          />
         </div>
-      
+      </div>
     </main>
   )
 }
