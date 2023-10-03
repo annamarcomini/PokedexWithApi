@@ -1,10 +1,17 @@
-.title{
-  p{color: var(--gray-900);
-    font-size: 1.25rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    margin-left: 2.5rem;
+.texts{
+
+    span{
+    color: var(--gray-900);
+    font-size: 1.20rem;
+    font-weight: 500;
+    background-color: var(--blue-100);
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: var(--blue);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px; //centraliza o texto no centro e deixa seu tamanho de acordo c o texto dentro do span
+    cursor: default; /* Impede que o cursor mude para o estilo de clique */
  }
- 
 }

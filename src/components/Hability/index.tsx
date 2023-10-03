@@ -1,17 +1,15 @@
 import styles from './styles.module.scss'
 
  interface HabilityProps {
-   title: string
-   children: React.ReactNode
+   texts: string
  }
 
- export default function Hability({ title, children }: HabilityProps) {
+ export default function Hability({ texts }: HabilityProps) {
    return (
      <main>
-       <div className={styles.title}>
-        <p>{title}</p>
+       <div className={styles.texts}>
+        <span>{texts}</span>
       </div>
-      <div className={styles.texts}>{children}</div>
      </main>
    )
  }
