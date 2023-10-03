@@ -316,14 +316,12 @@ export interface Icons2 {
 }
 
 export interface Stat {
+  stat: {
+    name: string
+    url: string
+  }
   base_stat: number
   effort: number
-  stat: Stat2
-}
-
-export interface Stat2 {
-  name: string
-  url: string
 }
 
 export interface Type {
