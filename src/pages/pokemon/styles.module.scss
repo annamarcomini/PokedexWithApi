@@ -1,66 +1,90 @@
-.main{
- display: flex;
+.main {
+  display: flex;
+  margin-left: 2.3rem;
 }
 .container {
- width: 50vw;
- height: 100vh;
+  width: 50vw;
+  height: 100vh;
 }
 
- .imgLogo{
- width: 13.5rem;
- margin-left: 20px;
+.imgLogo {
+  //logo pokemon
+  width: 13.5rem;
+  margin-left: -15px;
 }
- .column1 {
-  h1{
-  color: var(--gray-900);
-  font-size: 2.4rem;
-  margin-left: 40px;
-  margin-top: 1.5rem;
- }
- 
-}
+.column1 {
 
-.row{
-display: flex;
-flex-direction: row;
-margin-top: 0.8rem;
-font-size: 1rem;
-}
-
-.column2{
- width: 76vw;
- height: 100vh;
- background-color: var(--blue);
- clip-path: polygon(33% 0%, 100% 0%, 100% 100%, 0% 100%);
-  
-}
-
-.pokeIMG{
- img{
-  height: 24.2rem;
-  margin-left: 18rem;
-  margin-top: 12rem;
-  width: 22.6rem;
-  
- }
-}
-.ability{ //para estilizar em duas caixas separadas teve que ser aqui e não no componente
- span{
-    margin-left: 2.5rem;
-    font-weight: 500;
+  h1 {
     color: var(--gray-900);
-    font-size: 1.2rem;
-    background-color: var(--blue-100);
-    border-radius: 8px;
-    border: solid 2px;
-    border-color: var(--blue);
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 4px; 
-    padding-bottom: 4px;//centraliza o texto no centro
-    cursor: default; /* Impede que o cursor mude para o estilo de clique */
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+  }
+  p {
+    color: var(--gray-900);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
 }
- }
 
+.rowContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.row1{
+P {
+    color: var(--gray-900);
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+}
 
+.row2{
+    P {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--gray-900);
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+.height {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+}
+}
+
+.ability {
+ display: flex;
+ gap: 1.5rem;
+  
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap; //quebra linha de acordo c a largura maxima
+  max-width: 20rem;
+}
+
+.column2 {
+  width: 76vw;
+  height: 100vh;
+  background-color: var(--blue);
+  clip-path: polygon(33% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.pokeIMG {
+  img {
+    height: 24.2rem;
+    margin-left: 18rem;
+    margin-top: 12rem;
+    width: 22.6rem;
+  }
+}
