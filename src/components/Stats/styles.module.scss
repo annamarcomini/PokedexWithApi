@@ -1,0 +1,38 @@
+ .main{
+  width: 6rem; //alinhar o value com a label dentro da main
+  display: flex;
+  flex-direction: column;
+ 
+ }
+
+.valueContainer{
+ background-color: var(--blue-100);
+ width: 3.8rem; //estilização do background, a bolinha e seu alinhamento
+ height: 3.8rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 4rem;
+ border: solid 0.23rem;
+ border-color: var(--blue);
+
+ span{
+  color: var(--gray-900); //value, o numero
+    font-size: 1.12rem;
+ }
+}
+
+.label{
+ margin-right: 2rem;
+ p{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   color: var(--gray-900); //a label, a legenda
+   font-size: 1.10rem;
+   font-weight: bold;
+   margin-top: 0.5rem;
+   margin-bottom: 1.1rem;
+   
+  }
+}
