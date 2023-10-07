@@ -12,7 +12,8 @@ export default function Stats({ label, value }: StatsProps) {
    value >= 70? "var(--green-100)":
     value <= 51? "var(--red-100)": "var(--yellow-100)" ;
  //vars para mudar a cor atraves de propridade style ali na div que colore o fundo dos status.
- const borderColor= value >= 70 ? "var(--green-300)": 
+ const borderColor= 
+ value >= 70 ? "var(--green-300)": 
  value <= 51? "var(--red-300)": 'var(--yellow-300)';
 
   return (
