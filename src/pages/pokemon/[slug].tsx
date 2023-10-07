@@ -34,6 +34,7 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
             alt="Follow us on Twitter"
           />
         </div>
+        
         <div className={styles.column1}>
           <h1>{capitalizeFirstLetter(pokemon.name)}</h1>
 

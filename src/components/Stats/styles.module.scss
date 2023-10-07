@@ -6,15 +6,13 @@
  }
 
 .valueContainer{
- background-color: var(--blue-100);
- width: 3.8rem; //estilização do background, a bolinha e seu alinhamento
- height: 3.8rem;
+ width: 3.9rem; //estilização do background, a bolinha e seu alinhamento
+ height: 3.9rem;
  display: flex;
  justify-content: center;
  align-items: center;
  border-radius: 4rem;
- border: solid 0.23rem;
- border-color: var(--blue);
+ border: solid 0.25rem;
 
  span{
   color: var(--gray-900); //value, o numero
