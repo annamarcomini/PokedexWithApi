@@ -1,19 +1,21 @@
 .main {
   display: flex;
   margin-left: 2.3rem;
+
 }
 .container {
-  width: 50vw;
-  height: 100vh;
-}
-
-.imgLogo {
+   width: 50vw;
+   height: 100vh;
+   
+ .imgLogo {
   //logo pokemon
   width: 13.5rem;
   margin-left: -15px;
+} 
 }
-.column1 {
 
+.column1 {
+ 
   h1 {
     color: var(--gray-900);
     font-size: 2.4rem;
@@ -74,7 +76,7 @@ P {
 }
 
 .column2 {
-  width: 76vw;
+  width: 100vw;
   height: 100vh;
   background-color: var(--blue);
   clip-path: polygon(33% 0%, 100% 0%, 100% 100%, 0% 100%);

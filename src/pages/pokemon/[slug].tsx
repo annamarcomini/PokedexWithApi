@@ -26,16 +26,15 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
 
       {/* Renderize aqui os detalhes do Pokémon */}
       <div className={styles.container}>
-        <div>
-          <Image
-            className={styles.imgLogo}
-            priority
-            src={logoIMG}
-            alt="Follow us on Twitter"
-          />
-        </div>
-        
         <div className={styles.column1}>
+          <div>
+            <Image
+              className={styles.imgLogo}
+              priority
+              src={logoIMG}
+              alt="Follow us on Twitter"
+            />
+          </div>
           <h1>{capitalizeFirstLetter(pokemon.name)}</h1>
 
           <div className={styles.rowContainer}>
