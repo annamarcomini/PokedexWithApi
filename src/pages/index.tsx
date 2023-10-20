@@ -3,6 +3,7 @@ import styles from "./styles.module.scss"
 import Image from "next/image"
 import logoIMG from "../assets/Pokemon.svg"
 import pikachu from "../assets/Pikachu.svg"
+import Link from "next/link";
 
 export default function Inicial(){
 return (
@@ -33,6 +34,11 @@ return (
               world market.
             </span>
           </div>
+          <Link href={'/home'}>
+            <div className={styles.button}>
+              <button type="button">Catch pokemon´s</button>
+            </div>
+          </Link>
         </div>
       </div>
 

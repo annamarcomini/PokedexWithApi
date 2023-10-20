@@ -8,8 +8,7 @@
   height: 100vh;
 }
 
-.column1 {
-  .title {
+.title {
     h1 {
       margin-top: 6rem;
       margin-bottom: 1.6rem;
@@ -27,12 +26,25 @@
       font-weight: 500;
     }
   }
-}
 
 .imgLogo {
   //logo pokemon
   width: 13.5rem;
   margin-left: -15px;
+}
+
+.button{
+ button{
+  margin-top: 2rem;
+ background-color: var(--yellow-300);
+ height: 3rem;
+ width: 15rem;
+font-size: 1.11rem;
+font-weight: bold;
+border-radius: 2rem;
+border: 0rem;
+
+ }
 }
 
 .column2 {
