@@ -35,8 +35,9 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
               alt="Follow us on Twitter"
             />
           </div>
-          <h1>{capitalizeFirstLetter(pokemon.name)}</h1>
-
+          <div className={styles.pokeName}>
+            <h1>{capitalizeFirstLetter(pokemon.name)}</h1>
+          </div>
           <div className={styles.rowContainer}>
             <div className={styles.row1}>
               <p>Weight:</p>
@@ -52,8 +53,9 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
               </div>
             </div>
           </div>
-
-          <p>Habilities:</p>
+          <div className={styles.abilityTitle}>
+            <p>Habilities:</p>
+          </div>
           <div className={styles.ability}>
             {pokemon.abilities.map(
               (
@@ -65,7 +67,9 @@ const PokemonDetailsPage: React.FC<PokemonDetailsPageProps> = ({ pokemon }) => {
             )}
           </div>
 
-          <p>Stats:</p>
+          <div className={styles.statsTitle}>
+            <p>Stats:</p>
+          </div>
           <div className={styles.stats}>
             {pokemon.stats.map((stat, index) => (
               <Stats label={stat.stat.name} value={stat.base_stat} />

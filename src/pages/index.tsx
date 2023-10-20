@@ -21,7 +21,18 @@ return (
           />
         </div>
         <div className={styles.column1}>
-          <h1>Let's catch them all!</h1>
+          <div className={styles.title}>
+            <h1>Let's catch them all!</h1>
+          </div>
+          <div className={styles.text}>
+            <span>
+              Pokémon is a media franchise that originally started out as an RPG
+              video game, but due to its popularity has managed to expand to
+              other media entertainment such as TV series, movies, card games,
+              clothes, among others, becoming a brand that is recognized in the
+              world market.
+            </span>
+          </div>
         </div>
       </div>
 

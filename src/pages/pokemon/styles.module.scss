@@ -6,31 +6,40 @@
 .container {
    width: 50vw;
    height: 100vh;
-   
+
  .imgLogo {
   //logo pokemon
   width: 13.5rem;
   margin-left: -15px;
 } 
 }
-
-.column1 {
- 
+  
+  .pokeName{
   h1 {
     color: var(--gray-900);
     font-size: 2.4rem;
     margin-top: 1.5rem;
-  }
+  }}
+  
+  .abilityTitle{
   p {
     color: var(--gray-900);
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
     font-size: 1.25rem;
     font-weight: bold;
-  }
-}
+  }}
 
-.rowContainer {
+  .statsTitle{
+  p {
+    color: var(--gray-900);
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }}
+
+ .rowContainer {
   display: flex;
   flex-wrap: wrap;
 }
@@ -74,6 +83,8 @@ P {
   flex-wrap: wrap; //quebra linha de acordo c a largura maxima
   max-width: 20rem;
 }
+
+
 
 .column2 {
   width: 100vw;
