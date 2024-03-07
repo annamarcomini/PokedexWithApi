@@ -15,7 +15,7 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## Este projeto foi feito por mim psra treino de consumo de api
+## Este projeto foi feito por mim para treino de consumo de api em Next e Typescript
 Foi muito importante para mim fazer este projeto sozinha, pude treinar como consumir api, construir telas com animações e todas as definições de um pokemon retornadas corretamente ao clicar na imagem de um pokemon para ver seus detalhes, tudo isso através de Server Side Rendering. O Next possui ferramentas poderosas que tornaram este projeto possível com poucas linhas de código.
 
 ![Captura de tela 2024-03-06 215749](https://github.com/annamarcomini/PokedexWithApi/assets/116853315/949d9f07-75d6-4cbe-8efb-c30e74cbcc82)
