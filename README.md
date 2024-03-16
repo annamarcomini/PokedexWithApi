@@ -17,6 +17,7 @@ O Pokedex foi desenvolvido para ser um exibidor de pokemons, onde é possível c
 
 ## 🔖 Como executar em sua máquina
 - Baixe o código
+- Execute o comando Yarn
 - Execute o comando Yarn Dev
 
 ![Captura de tela 2024-03-06 215749](https://github.com/annamarcomini/PokedexWithApi/assets/116853315/949d9f07-75d6-4cbe-8efb-c30e74cbcc82)
